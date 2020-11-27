@@ -1,0 +1,35 @@
+@mixin card-layout($color) {
+    position: relative;
+    background-color: $very-light-gray;
+
+    height: 170px;
+    width: 250px;
+
+    padding: 25px;
+
+    border-top: 4px solid $color;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px -3px $grayish-blue;
+
+    h2{
+        font-weight: 600;
+        font-size: 20px;
+        color: $very-dark-blue;
+
+        margin-bottom: 7px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        color: $grayish-blue;
+    }
+
+    img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        margin: 0 25px 25px 0;
+    }
+}
