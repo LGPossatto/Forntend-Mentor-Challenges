@@ -1,0 +1,77 @@
+@import './variables';
+@import './layouts';
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: $font;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body{
+    max-width: 100vw;
+}
+
+body{
+    padding: 25px 25px 0 25px;
+    background-color: $light-grayish-blue;
+}
+
+.main-grid{
+    display: grid;
+    gap: 25px;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 300px;
+    
+    
+    .card-grid-p{
+        @include card-layout($moderate-violet);
+    }
+    .card-grid-g{
+        @include card-layout($very-dark-grayish-blue);
+    }
+    .card-grid-w{
+        @include card-layout($white, $very-dark-blackish-blue);
+    }
+    .card-grid-d{
+        @include card-layout($very-dark-blackish-blue);
+    }
+    
+    .wide-card{
+        grid-column: span 2 / auto;
+    }
+    
+    .tall-card{
+        grid-row: span 2 / auto;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .main-grid{
+        grid-auto-rows: auto;
+
+    
+        .wide-card{
+        grid-column: auto;
+    }
+    
+    .tall-card{
+        grid-row: auto;
+    }
+    }
+}
+
+footer{
+    background-color: $very-dark-grayish-blue;
+    margin-top: 25px;
+    color: $light-gray;
+    text-align: center;
+    font-size: 12px;
+
+    a{
+        color: $very-dark-blackish-blue;
+    }   
+}

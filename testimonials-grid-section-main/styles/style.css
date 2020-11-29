@@ -1,0 +1,261 @@
+/* Primary */
+/* Neutral */
+/* 
+Verified Graduate" has the same color as the person's name with 50% opacity
+Review paragraphs inside the quotations have the same color as well, but are at 70% opacity 
+*/
+/* Fonts */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  max-width: 100vw;
+}
+
+body {
+  padding: 25px 25px 0 25px;
+  background-color: #ecf2f8;
+}
+
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+}
+
+.main-grid .card-grid-p {
+  padding: 30px;
+  background-color: #7541c8;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-grid .card-grid-p div {
+  width: 200px;
+  height: 50px;
+}
+
+.main-grid .card-grid-p div img {
+  float: left;
+  width: 35px;
+  margin: 4px 15px 0 0;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.main-grid .card-grid-p div h1 {
+  padding-top: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-p div h3 {
+  padding-top: 0px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-p h2 {
+  padding-top: 15px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-p p {
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-g {
+  padding: 30px;
+  background-color: #48556a;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-grid .card-grid-g div {
+  width: 200px;
+  height: 50px;
+}
+
+.main-grid .card-grid-g div img {
+  float: left;
+  width: 35px;
+  margin: 4px 15px 0 0;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.main-grid .card-grid-g div h1 {
+  padding-top: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-g div h3 {
+  padding-top: 0px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-g h2 {
+  padding-top: 15px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-g p {
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-w {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-grid .card-grid-w div {
+  width: 200px;
+  height: 50px;
+}
+
+.main-grid .card-grid-w div img {
+  float: left;
+  width: 35px;
+  margin: 4px 15px 0 0;
+  border: 3px solid rgba(25, 33, 46, 0.3);
+  border-radius: 50%;
+}
+
+.main-grid .card-grid-w div h1 {
+  padding-top: 8px;
+  color: #19212e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-w div h3 {
+  padding-top: 0px;
+  color: rgba(25, 33, 46, 0.5);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-w h2 {
+  padding-top: 15px;
+  color: #19212e;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-w p {
+  padding-top: 20px;
+  color: rgba(25, 33, 46, 0.7);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-d {
+  padding: 30px;
+  background-color: #19212e;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-grid .card-grid-d div {
+  width: 200px;
+  height: 50px;
+}
+
+.main-grid .card-grid-d div img {
+  float: left;
+  width: 35px;
+  margin: 4px 15px 0 0;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.main-grid .card-grid-d div h1 {
+  padding-top: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-d div h3 {
+  padding-top: 0px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-d h2 {
+  padding-top: 15px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.main-grid .card-grid-d p {
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-grid .wide-card {
+  grid-column: span 2 / auto;
+}
+
+.main-grid .tall-card {
+  grid-row: span 2 / auto;
+}
+
+@media screen and (max-width: 575px) {
+  .main-grid {
+    grid-auto-rows: auto;
+  }
+  .main-grid .wide-card {
+    grid-column: auto;
+  }
+  .main-grid .tall-card {
+    grid-row: auto;
+  }
+}
+
+footer {
+  background-color: #48556a;
+  margin-top: 25px;
+  color: #cfcfcf;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer a {
+  color: #19212e;
+}
+/*# sourceMappingURL=style.css.map */
