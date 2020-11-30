@@ -1,0 +1,213 @@
+/* Primary */
+/* Accent */
+/* Neutral */
+/* Headings, Call-to-actions, Header Navigation */
+/* 400 700 */
+/* Body */
+/* 400 */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  max-width: 100vw;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap {
+  width: 90%;
+  background-color: #afafaf;
+}
+
+/*---------------------------HEADER--------------------------- */
+header {
+  background-color: white;
+}
+
+header nav {
+  height: 135px;
+}
+
+header nav img {
+  width: 115px;
+  padding-top: 50px;
+}
+
+header nav ul {
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-left: 35px;
+  line-height: 135px;
+}
+
+header nav ul li a {
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header .header-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-main .header-div-left {
+  width: 50%;
+  padding: 100px 0;
+}
+
+header .header-main .header-div-left h1, header .header-main .header-div-left p {
+  padding-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+header .header-main .header-div-left p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header .header-main .header-div-left input, header .header-main .header-div-left button {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
+          box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
+  font-size: 10px;
+  color: #bfbfbf;
+}
+
+header .header-main .header-div-left button {
+  background-color: #3065f8;
+  border: 1px solid #3065f8;
+  width: 150px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+header .header-main .header-div-left button:hover {
+  background-color: #070439;
+}
+
+header .header-main .header-div-right {
+  width: 50%;
+  padding: 50px 0;
+}
+
+header .header-main .header-div-right img {
+  width: 100%;
+}
+
+main .main-top {
+  background-color: #f6f6fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .main-top .main-txt {
+  width: 55%;
+}
+
+main .main-top .main-txt h1, main .main-top .main-txt p {
+  padding-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+main .main-top .main-txt p, main .main-top .main-txt a {
+  padding-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main .main-top .main-txt a {
+  display: inline-block;
+  padding-bottom: 0;
+  border-bottom: 1px solid #3c9f8f;
+  color: #3c9f8f;
+}
+
+main .main-top .main-txt a img {
+  margin: 0 0 -3px 3px;
+  width: 15px;
+}
+
+main .main-top .main-txt .main-card {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
+          box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
+}
+
+main .main-top .main-txt .main-card img {
+  width: 15px;
+}
+
+main .main-top .main-txt .main-card p {
+  padding: 10px 0 15px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+main .main-top .main-txt .main-card .card-perfil img {
+  float: left;
+  width: 25px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+main .main-top .main-txt .main-card .card-perfil h3, main .main-top .main-txt .main-card .card-perfil h4 {
+  font-family: "Raleway", sans-serif;
+  color: #070439;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main .main-top .main-txt .main-card .card-perfil h4 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+main .main-top .div-50 {
+  width: 45%;
+}
+
+main .main-top .div-50 img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
