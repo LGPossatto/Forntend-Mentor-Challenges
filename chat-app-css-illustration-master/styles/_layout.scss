@@ -1,0 +1,208 @@
+@mixin text-box($background-color, $font-color, $alpha:1){
+    background-color: rgba($background-color, $alpha);
+    max-width: 110px;
+    width: fit-content;
+    padding: 7px;
+    margin: 7px;
+    border-radius: 7px;
+    box-shadow: 0 2px 2px -2px rgba($dark-grayish-violet, 0.5);
+
+    p{
+        font-size: 8px;
+        font-weight: 400;
+        color: $font-color;
+    }
+}
+
+@mixin cell-layout {
+    background-color: $light-grayish-violet;
+    width: 225px;
+    height: 485px;
+    border: 10px solid $white;
+    border-radius: 25px;
+    
+
+    .cell-top{
+        background-image: linear-gradient(to right, $light-violet, $light-magenta);
+        width: 100%;
+        height: 70px;
+        border-radius: 20px 20px 7px 7px;
+        box-shadow: 0 3px 2px -2px $dark-grayish-violet;
+
+        .cell-top-white{
+            background-color: $white;
+            width: 125px;
+            height: 20px;
+            margin-bottom: 7px;
+            border-radius: 0 0 15px 15px;
+
+            transform: translateX(50px);
+        }
+
+        .cell-arrow-left{
+            display: inline-block;
+            transform: rotate(135deg);
+
+            margin: 0  0 5px 20px;
+            padding: 3px;
+            border: solid $white;
+            border-width: 0 3px 3px 0;
+        }
+
+        img{
+            display: inline-block;
+            transform: translateY(4px);
+
+            width: 25px;
+            border: 1px solid $white;
+            border-radius: 50%;
+        }
+
+        .cell-top-txt{
+            display: inline-block;
+
+            h2{
+                font-size: 12px;
+                font-weight: 700;
+                color: $white;
+            }
+
+            h3{
+                font-size: 8px;
+                font-weight: 400;
+                color: $pale-violet;
+            }
+        }
+
+        .cell-dot-menu{
+            display: inline-block;
+            transform: translateY(-7px);
+
+            margin-left: 50px;
+            width: 10px;
+            height: 10px;
+            background-image: radial-gradient(circle, $white 1px, transparent 1px);
+            background-size: 100% 33.33%;
+        }
+    }
+
+    .cell-main{
+
+        .cell-txt-you{
+            @include text-box($pale-violet, $moderate-violet, 0.3);
+        }
+
+        .cell-img-me{
+            text-align: right;
+            padding-top: 7px;
+
+            img{
+                width: 40px;
+                margin: 2px;
+                border-radius: 7px;
+                box-shadow: 0 2px 2px -2px rgba($dark-grayish-violet, 0.5);
+
+                &:last-child{
+                    margin-right: 7px;
+                }
+            }
+        }
+
+        .cell-txt-me{            
+            transform: translateX(87px);
+
+            @include text-box($white, $desaturated-dark-violet);
+        }
+
+        .cell-txt-me.edit-margin{
+            margin-top: 0;
+        }
+        
+        .cell-txt-me.edit-pos{
+            transform: translateX(133px);
+            margin-bottom: 14px;
+        }
+
+        .cell-offer-opt{
+            background-image: linear-gradient(to right, $light-magenta, $light-violet);
+            width: 145px;
+            padding: 7px;
+            margin: 10px;
+            border-radius: 10px 10px 10px 5px;
+            box-shadow: 0 2px 2px -2px rgba($dark-grayish-violet, 0.5);
+
+            .cell-offer-circle{
+                display: inline-block;
+
+                width: 5px;
+                height: 5px;
+                border: 1px solid $white;
+                border-radius: 50%;
+                padding: 3px;
+            }
+
+            p{
+                display: inline-block;
+                padding-left: 5px;
+                transform: translateY(-4px);
+
+                font-size: 8px;
+                font-weight: 400;
+                color: $white;
+            }
+
+            h1{
+                display: inline-block;
+                transform: translateX(30px);
+
+                font-size: 14px;
+                font-weight: 700;
+                color: $white;
+            }
+        }
+
+        .cell-offer-opt.edit-pos{
+            margin-bottom: 20px;
+
+            h1{
+                transform: translateX(45px);
+            }
+        }
+
+        .cell-msg-box{
+            background-color: $white;
+            width: 200px;
+            padding: 3px;
+            margin: 3px;
+            border-radius: 20px;
+
+            p{
+                display: inline-block;
+                transform: translate(10px, -7px);
+
+                font-size: 10px;
+                font-weight: 400;
+                color: $grayish-blue;
+            }
+
+            .cell-msg-box-button{
+                background-color: $very-dark-desaturated-violet;
+                display: inline-block;
+                width: 7px;
+                height: 7px;
+                padding: 10px;
+                border-radius: 50%;
+
+                transform: translateX(86px);
+
+                p{
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $white;
+
+                    transform: translate(-1px, -7px);
+                }
+            }
+        }
+    }
+}  

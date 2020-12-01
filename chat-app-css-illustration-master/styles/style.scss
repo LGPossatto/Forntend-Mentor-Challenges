@@ -1,0 +1,28 @@
+@import './variables';
+@import './layout';
+
+*{
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    list-style: none;
+
+    font-family: $font-main;
+}
+
+html, body{
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+body{
+    background-color: rgb(117, 111, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-body{
+    @include cell-layout();
+}

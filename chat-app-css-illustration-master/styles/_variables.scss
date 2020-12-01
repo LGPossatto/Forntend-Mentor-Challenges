@@ -1,0 +1,26 @@
+/*Text*/
+
+$pale-violet: rgb(216, 158, 255); /*(sub-heading at the top of the app ui)*/
+$moderate-violet: rgb(146, 65, 200); /*(chat on the left)*/
+$desaturated-dark-violet: hsl(271, 15%, 43%); /*(chat on the right)*/
+$grayish-blue: hsl(206, 6%, 79%); /*(placeholder text)*/
+$very-dark-desaturated-violet: hsl(271, 36%, 24%); /*(main heading)*/
+$dark-grayish-violet: hsl(270, 7%, 64%); /*(paragraph)*/
+
+/*gradients*/
+
+/*these two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient*/
+
+$light-magenta: hsl(293, 100%, 63%);
+$light-violet: hsl(264, 100%, 61%);
+
+/*Secondary*/
+
+$white: hsl(0, 0%, 100%); 
+$light-grayish-violet: rgb(245, 243, 247); /*(app background)*/
+$very-dark-desaturated-violet: hsl(271, 36%, 24%); /*(submit button background)*/
+$very-light-magenta: hsl(289, 100%, 72%); /*(radio button outline)*/
+
+/*Font*/
+
+$font-main: 'Rubik', sans-serif; /*400, 500, 700*/

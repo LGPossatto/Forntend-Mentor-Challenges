@@ -1,0 +1,266 @@
+/*Text*/
+/*(sub-heading at the top of the app ui)*/
+/*(chat on the left)*/
+/*(chat on the right)*/
+/*(placeholder text)*/
+/*(main heading)*/
+/*(paragraph)*/
+/*gradients*/
+/*these two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient*/
+/*Secondary*/
+/*(app background)*/
+/*(submit button background)*/
+/*(radio button outline)*/
+/*Font*/
+/*400, 500, 700*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+
+html, body {
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #756f66;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cell-body {
+  background-color: #f5f3f7;
+  width: 225px;
+  height: 485px;
+  border: 10px solid white;
+  border-radius: 25px;
+}
+
+.cell-body .cell-top {
+  background-image: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to right, #8838ff, #e942ff);
+  width: 100%;
+  height: 70px;
+  border-radius: 20px 20px 7px 7px;
+  -webkit-box-shadow: 0 3px 2px -2px #a39daa;
+          box-shadow: 0 3px 2px -2px #a39daa;
+}
+
+.cell-body .cell-top .cell-top-white {
+  background-color: white;
+  width: 125px;
+  height: 20px;
+  margin-bottom: 7px;
+  border-radius: 0 0 15px 15px;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.cell-body .cell-top .cell-arrow-left {
+  display: inline-block;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin: 0  0 5px 20px;
+  padding: 3px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+}
+
+.cell-body .cell-top img {
+  display: inline-block;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  width: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.cell-body .cell-top .cell-top-txt {
+  display: inline-block;
+}
+
+.cell-body .cell-top .cell-top-txt h2 {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.cell-body .cell-top .cell-top-txt h3 {
+  font-size: 8px;
+  font-weight: 400;
+  color: #d89eff;
+}
+
+.cell-body .cell-top .cell-dot-menu {
+  display: inline-block;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  margin-left: 50px;
+  width: 10px;
+  height: 10px;
+  background-image: radial-gradient(circle, white 1px, transparent 1px);
+  background-size: 100% 33.33%;
+}
+
+.cell-body .cell-main .cell-txt-you {
+  background-color: rgba(216, 158, 255, 0.3);
+  max-width: 110px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px;
+  margin: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(163, 157, 170, 0.5);
+          box-shadow: 0 2px 2px -2px rgba(163, 157, 170, 0.5);
+}
+
+.cell-body .cell-main .cell-txt-you p {
+  font-size: 8px;
+  font-weight: 400;
+  color: #9241c8;
+}
+
+.cell-body .cell-main .cell-img-me {
+  text-align: right;
+  padding-top: 7px;
+}
+
+.cell-body .cell-main .cell-img-me img {
+  width: 40px;
+  margin: 2px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(163, 157, 170, 0.5);
+          box-shadow: 0 2px 2px -2px rgba(163, 157, 170, 0.5);
+}
+
+.cell-body .cell-main .cell-img-me img:last-child {
+  margin-right: 7px;
+}
+
+.cell-body .cell-main .cell-txt-me {
+  -webkit-transform: translateX(87px);
+          transform: translateX(87px);
+  background-color: white;
+  max-width: 110px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px;
+  margin: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(163, 157, 170, 0.5);
+          box-shadow: 0 2px 2px -2px rgba(163, 157, 170, 0.5);
+}
+
+.cell-body .cell-main .cell-txt-me p {
+  font-size: 8px;
+  font-weight: 400;
+  color: #6e5d7e;
+}
+
+.cell-body .cell-main .cell-txt-me.edit-margin {
+  margin-top: 0;
+}
+
+.cell-body .cell-main .cell-txt-me.edit-pos {
+  -webkit-transform: translateX(133px);
+          transform: translateX(133px);
+  margin-bottom: 14px;
+}
+
+.cell-body .cell-main .cell-offer-opt {
+  background-image: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(to right, #e942ff, #8838ff);
+  width: 145px;
+  padding: 7px;
+  margin: 10px;
+  border-radius: 10px 10px 10px 5px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(163, 157, 170, 0.5);
+          box-shadow: 0 2px 2px -2px rgba(163, 157, 170, 0.5);
+}
+
+.cell-body .cell-main .cell-offer-opt .cell-offer-circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.cell-body .cell-main .cell-offer-opt p {
+  display: inline-block;
+  padding-left: 5px;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  font-size: 8px;
+  font-weight: 400;
+  color: white;
+}
+
+.cell-body .cell-main .cell-offer-opt h1 {
+  display: inline-block;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.cell-body .cell-main .cell-offer-opt.edit-pos {
+  margin-bottom: 20px;
+}
+
+.cell-body .cell-main .cell-offer-opt.edit-pos h1 {
+  -webkit-transform: translateX(45px);
+          transform: translateX(45px);
+}
+
+.cell-body .cell-main .cell-msg-box {
+  background-color: white;
+  width: 200px;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 20px;
+}
+
+.cell-body .cell-main .cell-msg-box p {
+  display: inline-block;
+  -webkit-transform: translate(10px, -7px);
+          transform: translate(10px, -7px);
+  font-size: 10px;
+  font-weight: 400;
+  color: #c6cacd;
+}
+
+.cell-body .cell-main .cell-msg-box .cell-msg-box-button {
+  background-color: #3e2753;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-transform: translateX(86px);
+          transform: translateX(86px);
+}
+
+.cell-body .cell-main .cell-msg-box .cell-msg-box-button p {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  -webkit-transform: translate(-1px, -7px);
+          transform: translate(-1px, -7px);
+}
+/*# sourceMappingURL=style.css.map */
