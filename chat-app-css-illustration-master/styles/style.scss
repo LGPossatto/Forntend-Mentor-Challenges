@@ -17,12 +17,52 @@ html, body{
 }
 
 body{
-    background-color: rgb(117, 111, 102);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.flex{
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cell-body{
     @include cell-layout();
+}
+
+.side-txt{
+    width: 400px;
+
+    h1{
+        padding-bottom: 20px;
+
+        font-size: 32px;
+        font-weight: 700;
+        color: $very-dark-desaturated-violet;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 500;
+        color: $dark-grayish-violet;
+        line-height: 24px;
+    }
+}
+
+.attribution{
+    background-color: $very-dark-desaturated-violet;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 500;
+    color: $grayish-blue;
+    text-align: center;
+
+    a{
+        font-size: 10px;
+        font-weight: 500;
+        color: $pale-violet;
+    }
 }
