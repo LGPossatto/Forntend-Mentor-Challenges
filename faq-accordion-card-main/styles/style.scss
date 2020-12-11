@@ -1,0 +1,109 @@
+@import 'variables';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: $main-font;
+}
+
+html, body{
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1 0 auto;
+
+    background-image: linear-gradient($soft-violet, $soft-blue);
+}
+
+/*-------------------------Main-Card-------------------------*/
+
+.main-card{
+    background-color: $white;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -15% 50%;
+    background-size: 50%;
+
+    width: 900px;
+    height: 360px;
+    padding: 70px 0;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px -5px rgba($very-dark-desaturated-blue, 0.5);
+
+    display: flex;
+    justify-content: space-between;
+
+    .card-img{
+        background-image: url(../images/illustration-box-desktop.svg), url(../images/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat, no-repeat; 
+        background-position: -5% 75%, 0 -20%;
+        transform: translateX(-75px);
+
+        width: 80%;
+    }
+
+    .card-faq{
+        width: 50%;
+        padding-right: 95px;
+
+        .faq-head{
+            padding-bottom: 18px;
+
+            font-size: 16px;
+            font-weight: 700;
+            color: $very-dark-desaturated-blue;
+        }
+
+        .faq-questions{
+
+            .question-box{
+                padding: 18px 18px 18px 0;
+                border-bottom: 1px solid $light-grayish-blue;
+
+                .question-head{
+                    display: flex;
+                    justify-content: space-between;
+
+                    h2{
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $very-dark-grayish-blue;
+
+                    }
+                    
+                    img{
+                        align-self: center;
+                    }
+                }
+
+                &:hover{
+                    .question-head{
+                        h2{
+                            color: $soft-red;
+                        }
+                    }
+                }
+
+                .question-txt{
+                    display: none;
+
+                    p{
+                        padding-top: 18px;
+
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $dark-grayish-blue;
+                    }
+                }
+            }
+        }
+    }
+}
