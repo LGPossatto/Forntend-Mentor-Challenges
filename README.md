@@ -14,3 +14,5 @@ Este repositório contêm alguns desafios que usei para aumentar minha habilidad
 04 - [testimonials-grid-section-main](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)  
 05 - [fylo-landing-page-with-two-column-layout-master](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5)  
 06 - [chat-app-css-illustration-master](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY)  
+07 - [faq-accordion-card-main](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)(first challenge using Sass)  
+08 - [coding-bootcamp-testimonials-slider-master](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL)  

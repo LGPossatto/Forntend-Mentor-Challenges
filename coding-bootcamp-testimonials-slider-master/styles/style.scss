@@ -1,0 +1,86 @@
+@import './variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: $main-font;
+    font-size: $body-font-size;
+}
+
+html, body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// Main ----------------------------------------------------
+
+main{
+    flex: 1 0 auto;
+
+    .main-box{
+
+        .box-txt{
+
+            .box-txt-top{
+
+                p{
+
+                }
+            }
+
+            .box-txt-bot{
+
+                h1{
+
+                }
+
+                h2{
+                    
+                }
+            }
+
+        }
+
+        .box-img{
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// Footer ----------------------------------------------------
+
+footer{
+    background-color: black;
+    
+    width: 100%;
+    min-height: 12px;
+    line-height: 10px;
+    text-align: center;
+
+    .attribution{
+        font-size: 10px;
+        color: white;
+        
+        a{
+            font-size: 10px;
+            color: cornflowerblue;
+        }
+    }
+}
