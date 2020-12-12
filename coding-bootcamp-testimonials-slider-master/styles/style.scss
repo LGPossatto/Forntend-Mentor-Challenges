@@ -13,6 +13,8 @@
 html, body{
     width: 100%;
     min-height: 100vh;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 body{
@@ -25,49 +27,198 @@ body{
 // Main ----------------------------------------------------
 
 main{
+    background-image: url(../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
     flex: 1 0 auto;
-
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     .main-box{
+        background-image: url(../images/pattern-bg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        
+        width: 80%;
+        height: 80%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .box-txt{
+            background-image: url(../images/pattern-quotes.svg);
+            background-repeat: no-repeat;
+            background-position: left top;
+
+            width: 50%;
+            transform: translateX(8%);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .box-txt-top{
 
                 p{
-
+                    padding-top: 50px;
+                    font-weight: 300;
+                    color: $dark-blue;
                 }
             }
 
             .box-txt-bot{
-
+                width: 100%;
+                margin-top: 25px;
+                
                 h1{
-
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $dark-blue;
                 }
-
+                
                 h2{
-                    
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $grayish-blue;
                 }
             }
-
+            
         }
-
+        
         .box-img{
+            width: 50%;
+            height: 100%;
 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .main-img{
+                width: 100%;
+                margin-top: 60px;
+                border-radius: 7px;
+                box-shadow: 20px 20px 50px -10px rgba($dark-blue, 0.5);
+            }
+
+            .btn-box{
+                background-color: $white;
+                transform: translate(75px, -25px);
+                
+                width: 100px;
+                height: 50px;
+                border-radius: 25px;
+                box-shadow: 5px 5px 20px -10px rgba($dark-blue, 0.5);
+
+                display: flex;
+                justify-content: space-around;
+                
+                .btn-left, .btn-right{
+                    display: block;
+                    width: 50%;
+                    padding-top: 2px;
+                    text-align: center;
+                }
+            }
         }
     }
 }
 
+@media screen and (max-width: 880px){
+    html, body{
+        height: auto;
+    }
 
+    main{
+        background-size: 75% auto;
+        
+        .main-box{
+            background-size: 50% auto;
+            background-position: top;
 
+            width: 85%;
+            
+            flex-direction: column-reverse;
+    
+            .box-txt{
+                background-position: (120px 0px);
+                background-size: 75px 75px;
 
+                width: 100%;
+                transform: translateX(0%);
+                
+                .box-txt-top{
+                    text-align: center;
+                        
+                    p{
+                        font-size: 18px;
+                    }
+                }
+    
+                .box-txt-bot{
+                    text-align: center;
+                    
+                    h1, h2{
+                        display: block;
+                        font-size: 18px;
+                    }
+                    
+                    h2{
+                        padding-bottom: 100px;
+                    }
+                }
+                
+            }
+            
+            .box-img{
+                width: 100%;
+                align-items: center;
+                transform: translate(0px, -30px);
+                
+                .main-img{
+                    width: 250px;
+                }
+    
+                .btn-box{
+                    transform: translate(0px, -25px);
+                }
+            }
+        }
+    }
+}
 
+@media screen and (max-width: 520px){
+    main{
+        
+        .main-box{
+            background-size: 100% auto;     
+        }
+    }
+}
 
+@media screen and (min-width: 1200px){
 
+    main{
+        .main-box{
+            .box-img{
+                .main-img{
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
 
 // Footer ----------------------------------------------------
 
 footer{
-    background-color: black;
+    background-color: $dark-blue;
     
     width: 100%;
     min-height: 12px;
@@ -76,11 +227,11 @@ footer{
 
     .attribution{
         font-size: 10px;
-        color: white;
+        color: $grayish-blue;
         
         a{
             font-size: 10px;
-            color: cornflowerblue;
+            color: rgb(163, 149, 197);
         }
     }
 }
