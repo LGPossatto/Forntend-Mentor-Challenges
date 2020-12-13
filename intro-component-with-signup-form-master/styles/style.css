@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #ff7a7a;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-box {
+  width: 85%;
+  margin-top: 85px;
+  text-align: center;
+}
+
+.header-box h1 {
+  font-size: calc(16px * 2);
+  font-weight: 600;
+  line-height: calc(16px * 2.5);
+  color: white;
+}
+
+.header-box p {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-weight: 500;
+  line-height: calc(16px * 1.75);
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .header-box h1 {
+    font-size: calc(16px * 3);
+    line-height: calc(16px * 3.5);
+  }
+  .header-box p {
+    font-size: calc(16px * 1.5);
+    line-height: calc(16px * 2);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-box {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+
+.main-box {
+  width: 85%;
+}
+
+.main-box .try-btn {
+  background-color: #6055a5;
+  width: 100%;
+  padding: 15px 50px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 10px -3px #3e3c49;
+          box-shadow: 0 5px 10px -3px #3e3c49;
+  text-align: center;
+  font-weight: 500;
+  line-height: calc(16px * 1.75);
+  color: white;
+}
+
+.main-box .form-box {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 75px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 10px -3px #3e3c49;
+          box-shadow: 0 5px 10px -3px #3e3c49;
+}
+
+.main-box .form-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-box .form-box form input {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 98%;
+  width: calc(100% - 30px);
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.main-box .form-box form input::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #3e3c49;
+}
+
+.main-box .form-box form input:-ms-input-placeholder {
+  font-weight: 500;
+  color: #3e3c49;
+}
+
+.main-box .form-box form input::-ms-input-placeholder {
+  font-weight: 500;
+  color: #3e3c49;
+}
+
+.main-box .form-box form input::placeholder {
+  font-weight: 500;
+  color: #3e3c49;
+}
+
+.main-box .form-box form p {
+  display: none;
+  width: 95%;
+  padding: 3px 0;
+  margin-top: -15px;
+  text-align: right;
+  font-size: calc(16px / 1.5);
+  font-weight: 400;
+  color: #ff7a7a;
+}
+
+.main-box .form-box form .claim-btn {
+  background-color: #38cc8c;
+  width: 100%;
+  padding: 15px 0px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 10px -3px #3e3c49;
+          box-shadow: 0 5px 10px -3px #3e3c49;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: calc(16px * 1.75);
+  color: white;
+}
+
+.main-box .form-box form .txt-bot {
+  padding: 0px 20px;
+  text-align: center;
+  font-size: calc(16px / 1.5);
+  font-weight: 600;
+  color: #b9b6d3;
+}
+
+.main-box .form-box form .txt-bot a {
+  font-size: calc(16px / 1.5);
+  font-weight: 600;
+  color: #ff7a7a;
+}
+
+@media screen and (min-width: 1000px) {
+  .main-box {
+    width: 45%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
