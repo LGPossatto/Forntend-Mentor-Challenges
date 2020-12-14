@@ -1,0 +1,32 @@
+// typography
+$main-font: 'Inter', sans-serif; // 400, 700
+$font-size: 14px;
+
+// colors
+
+// primary
+$lime-green: #1db489;
+$bright-red: #dc414c;
+
+$facebook: #198ff5;
+$twitter: #1ca0f2;
+$instagram: linear-gradient(to right, #fdc468, #df4996);
+$youtube: #c4032a;
+
+// dark theme
+$very-dark-blue: #1e202a; // (bg)
+$very-dark-blue: #1f212e; // (top bg pattern)
+$dark-desaturated-blue: #252a41; // (card bg)
+$desaturated-blue: #8b97c6; // (text)
+$white: #ffffff; // (text)
+
+$toggleD: linear-gradient(to right, #378fe6, #3eda82);
+
+// light theme
+$white: #ffffff; // (bg)
+$very-pale-blue: #f5f7ff; // (top bg pattern)
+$light-grayish-blue: #f0f2fa; // (card bg)
+$dark-grayish-blue: #63687e; // (text)
+$very-dark-blue: #1e202a; // (text)
+
+$toggleL: #aeb3cb;

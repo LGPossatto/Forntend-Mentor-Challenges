@@ -1,0 +1,131 @@
+@mixin bigCard ($border-color, $font-color: $lime-green) {
+    background-color: $dark-desaturated-blue;
+
+    @if ($border-color == $instagram){
+        border-top: 4px solid;
+        border-image-slice: 1;
+        border-image-source: $border-color;
+        border-radius: 4px;
+    } @else {
+        border-top: 4px solid $border-color;
+        border-radius: 4px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-align: center;
+
+    .bb-top{
+
+        img{
+            display: inline-block;
+        }
+
+        p{
+            display: inline-block;
+            padding-left: 5px;
+            transform: translateY(-5px);
+
+            font-size: calc(#{$font-size} / 1.2);
+            font-weight: 700;
+            color: $desaturated-blue;
+        }
+
+    }
+
+    .bb-mid{
+
+        h1{
+
+            font-size: calc(#{$font-size} * 3.5);
+            color: $white;
+        }
+
+        p{
+            padding-left: 5px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+            font-size: calc(#{$font-size} / 1.2);
+            color: $desaturated-blue;
+        }
+    }
+
+    .bb-bot{
+
+        img{
+            display: inline-block;
+        }
+
+        p{
+            display: inline-block;
+
+            font-size: calc(#{$font-size} / 1.2);
+            font-weight: 700;
+            color: $font-color;
+        }
+    }
+
+    &:hover{
+        opacity: 0.75;
+    }
+}
+
+@mixin smallCard() {
+    background-color: $dark-desaturated-blue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 4px;
+
+    .sb-top{
+        width: 80%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            font-size: calc(#{$font-size});
+            font-weight: 700;
+            color: $desaturated-blue;
+        }
+    }
+
+    .sb-bot{
+        width: 80%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        h2{
+            font-size: calc(#{$font-size} * 2.5);
+            color: $white;
+        }
+
+        p{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: calc(#{$font-size} / 1.2);
+            font-weight: 700;
+            color: $lime-green;
+
+            img{
+                margin-right: 5px;
+            }
+        }
+
+        .red-txt{
+            color: $bright-red;
+        }
+    }
+}
