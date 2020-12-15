@@ -7,36 +7,15 @@ const showError = (msg) => {
     errorM.lastElementChild.innerHTML = msg
 }
 
-const verifyAt = (emailSplitW) => {
-    if (emailSplitW === '@'){
-        return true
-    }
-}
-
-const verifyDot = (emailSplitW) => {
-    if (emailSplitW === '.'){
-        return true
-    }
+const emailOk = (msg) => {
+    errorM.firstElementChild.style.borderColor = '#ff5263'
+    errorM.lastElementChild.style.display = 'block'
+    errorM.lastElementChild.innerHTML = msg
 }
 
 const verifyEmail = (email) => {
-    let emailw1 = email.split('')
-    let emailw2 = email.split('@')[1]
-    let dotOk = 0
-    
-    for (w1 of emailw1) {
-        if (verifyAt(w1)){
-            for (w2 of emailw2) {
-                if (verifyDot(w2)){
-                    dotOk++
-                }
-            }
-        }
-    }
-    
-    if (dotOk === 1) {
-        return true
-    }
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
 }
 
 const sendEmail = () => {
@@ -47,7 +26,10 @@ const sendEmail = () => {
     } else if (!verifyEmail(emailValue)){
         showError('Please provide a valid email address')
     } else {
-        showError('Email OK!')
+        errorM.firstElementChild.style.borderColor = '#4f7df3'
+        errorM.lastElementChild.style.display = 'none'
+        errorM.lastElementChild.innerHTML = ''
+        alert('Email OK!')
     }
 
 }

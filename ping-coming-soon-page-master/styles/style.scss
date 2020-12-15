@@ -116,6 +116,10 @@ main{
             font-size: calc(#{$standard-font-size} / 1.6);
             font-weight: 600;
             color: $white;
+
+            &:hover{
+                opacity: 0.75;
+            }
         }
     }
     
@@ -144,6 +148,10 @@ footer{
             
             border: 1px solid $gray;
             border-radius: 50%;
+
+            &:hover{
+                opacity: 0.75;
+            }
         }
         
     }

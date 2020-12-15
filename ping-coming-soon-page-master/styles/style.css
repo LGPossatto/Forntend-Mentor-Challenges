@@ -1,15 +1,3 @@
-/* ### fonts
-
-- family: [libre franklin](https://fonts.google.com/specimen/libre+franklin)
-- weights: 300, 600, 700
-
-## icons
-
-for the social icons, you can use a font icon library. some suggestions can be found below:
-
-- [font awesome](https://fontawesome.com)
-- [icomoon](https://icomoon.io)
-- [ionicons](https://ionicons.com) */
 * {
   margin: 0;
   padding: 0;
@@ -152,6 +140,10 @@ main .email-block button {
   color: white;
 }
 
+main .email-block button:hover {
+  opacity: 0.75;
+}
+
 main .img-box {
   width: 100%;
   margin: 20px 0;
@@ -180,6 +172,10 @@ footer .icon-box div {
   margin: 5px;
   border: 1px solid #969696;
   border-radius: 50%;
+}
+
+footer .icon-box div:hover {
+  opacity: 0.75;
 }
 
 footer p {
