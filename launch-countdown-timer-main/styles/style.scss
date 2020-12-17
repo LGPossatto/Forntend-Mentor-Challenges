@@ -11,13 +11,249 @@
 
 html, body{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
 body{
+    background-color: $very-dark-blue;
+    background-image: url(../images/bg-stars.svg), url(../images/pattern-hills.svg), linear-gradient(to bottom, #{$very-dark-blue}, #{$alpha-red});
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: top, bottom;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.panel{
+    height: 100%;
+    width: 80%;
+
+    position: relative;
+    text-align: center;
+    
+    .title{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        
+        h1{
+            padding: 10% 0 ;
+
+            font-size: 1.5vw;
+            letter-spacing: 0.5vw;
+            text-transform: uppercase;
+            text-shadow: 0.1vw 0.1vw 0.15vw $very-darker-blue;
+            color: $white;
+        }
+    }
+
+    .clock{
+        position: absolute;
+        top: 25%;
+        bottom: 15%;
+        left: 15%;
+        right: 15%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .display{
+            width: 25%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .display-block{
+                background-color: $very-darker-blue;
+                width: 90%;
+                height: 12.5vw;
+                border-radius: 5%;
+
+                display: flex;
+                justify-content: center;
+
+                .display-block-number{
+                    background-color: $dark-desaturated-blue;
+                    width: 97.5%;
+                    height: 93%;
+                    margin-top: 1%;
+                    border-radius: 5%;
+                    
+                    position: relative;
+                    
+                    .number-shadow{
+                        background-image: linear-gradient(to right, rgba($very-darker-blue, 0.25), rgba($very-darker-blue, 0.25));
+                        position: absolute;
+                        z-index: 1;
+                                                
+                        width: 100%;
+                        height: 50%;
+                        border-bottom: 3px solid rgba($very-darker-blue, 0.1);
+                        border-radius: 5% 5% 0 0;
+
+
+                    }
+
+                    .number-ball-l{
+                        position: absolute;
+                        top: 48%;
+                        left: -2.25%;
+                        
+                        width: 7%;
+                        height: 7%;
+                        border-radius: 50%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .half-ball-r{
+                            background-color: $very-darker-blue;
+                            width: 50%;
+                            height: 100%;
+
+                            border-radius: 0 50% 50% 0;
+                        }
+                    }
+
+                    .number-ball-r{
+                        position: absolute;
+                        top: 48%;
+                        right: -2%;
+                        
+                        width: 7%;
+                        height: 7%;
+                        border-radius: 50%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .half-ball-l{
+                            background-color: $very-darker-blue;
+                            width: 50%;
+                            height: 100%;
+
+                            border-radius: 50% 0 0 50%;
+                        }
+                    }
+
+                    p{
+                        position: absolute;
+                        top: 10%;
+                        left: 0;
+                        right: 0;
+                        z-index: 0;
+                        
+                        font-size: 7vw;
+                        color: $soft-red;
+                    }
+                }
+            }
+
+            .display-name{
+
+                h2{
+                    padding: 10% 0 ;
+
+                    font-size: 1vw;
+                    letter-spacing: 0.25vw;
+                    text-transform: uppercase;
+                    text-shadow: 0.05vw 0.05vw 0.1vw $very-darker-blue;
+                    color: $grayish-blue;
+                }
+            }
+        }
+
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        img{
+            width: 1.75vw;
+            margin: 5% 1vw;
+
+            &:hover{
+                filter: invert(49%) sepia(43%) saturate(1466%) hue-rotate(309deg) brightness(103%) contrast(97%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .panel{
+        width: 90%;
+
+        .title{
+ 
+            h1{
+                font-size: 2vw;
+                letter-spacing: 0.75vw;
+            }
+        }
+
+        .clock{
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            right: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .panel{
+
+        .title{
+ 
+            h1{
+                padding: 15% 0;
+
+                font-size: 2.2vw;
+                letter-spacing: 0.77vw;
+            }
+        }
+
+        .clock{
+            position: absolute;
+            top: 13%;
+            left: 10%;
+            right: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .panel{
+
+        .title{
+ 
+            h1{
+                padding: 15% 0;
+
+                font-size: 2.4vw;
+                letter-spacing: 0.8vw;
+            }
+        }
+
+        .clock{
+            position: absolute;
+            top: -10%;
+            left: 10%;
+            right: 10%;
+        }
+    }
+}

@@ -8,11 +8,17 @@
 
 html, body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
 body {
+  background-color: #1e1f29;
+  background-image: url(../images/bg-stars.svg), url(../images/pattern-hills.svg), -webkit-gradient(linear, left top, left bottom, from(#1e1f29), to(rgba(133, 16, 45, 0.1)));
+  background-image: url(../images/bg-stars.svg), url(../images/pattern-hills.svg), linear-gradient(to bottom, #1e1f29, rgba(133, 16, 45, 0.1));
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top, bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,5 +28,225 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.panel {
+  height: 100%;
+  width: 80%;
+  position: relative;
+  text-align: center;
+}
+
+.panel .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.panel .title h1 {
+  padding: 10% 0;
+  font-size: 1.5vw;
+  letter-spacing: 0.5vw;
+  text-transform: uppercase;
+  text-shadow: 0.1vw 0.1vw 0.15vw #191a24;
+  color: white;
+}
+
+.panel .clock {
+  position: absolute;
+  top: 25%;
+  bottom: 15%;
+  left: 15%;
+  right: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.panel .clock .display {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel .clock .display .display-block {
+  background-color: #191a24;
+  width: 90%;
+  height: 12.5vw;
+  border-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.panel .clock .display .display-block .display-block-number {
+  background-color: #343650;
+  width: 97.5%;
+  height: 93%;
+  margin-top: 1%;
+  border-radius: 5%;
+  position: relative;
+}
+
+.panel .clock .display .display-block .display-block-number .number-shadow {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 26, 36, 0.25)), to(rgba(25, 26, 36, 0.25)));
+  background-image: linear-gradient(to right, rgba(25, 26, 36, 0.25), rgba(25, 26, 36, 0.25));
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  border-bottom: 3px solid rgba(25, 26, 36, 0.1);
+  border-radius: 5% 5% 0 0;
+}
+
+.panel .clock .display .display-block .display-block-number .number-ball-l {
+  position: absolute;
+  top: 48%;
+  left: -2.25%;
+  width: 7%;
+  height: 7%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel .clock .display .display-block .display-block-number .number-ball-l .half-ball-r {
+  background-color: #191a24;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 50% 50% 0;
+}
+
+.panel .clock .display .display-block .display-block-number .number-ball-r {
+  position: absolute;
+  top: 48%;
+  right: -2%;
+  width: 7%;
+  height: 7%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel .clock .display .display-block .display-block-number .number-ball-r .half-ball-l {
+  background-color: #191a24;
+  width: 50%;
+  height: 100%;
+  border-radius: 50% 0 0 50%;
+}
+
+.panel .clock .display .display-block .display-block-number p {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  font-size: 7vw;
+  color: #fb6087;
+}
+
+.panel .clock .display .display-name h2 {
+  padding: 10% 0;
+  font-size: 1vw;
+  letter-spacing: 0.25vw;
+  text-transform: uppercase;
+  text-shadow: 0.05vw 0.05vw 0.1vw #191a24;
+  color: #8486a9;
+}
+
+.panel .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.panel .footer img {
+  width: 1.75vw;
+  margin: 5% 1vw;
+}
+
+.panel .footer img:hover {
+  -webkit-filter: invert(49%) sepia(43%) saturate(1466%) hue-rotate(309deg) brightness(103%) contrast(97%);
+          filter: invert(49%) sepia(43%) saturate(1466%) hue-rotate(309deg) brightness(103%) contrast(97%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  .panel {
+    width: 90%;
+  }
+  .panel .title h1 {
+    font-size: 2vw;
+    letter-spacing: 0.75vw;
+  }
+  .panel .clock {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .panel .title h1 {
+    padding: 15% 0;
+    font-size: 2.2vw;
+    letter-spacing: 0.77vw;
+  }
+  .panel .clock {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .panel .title h1 {
+    padding: 15% 0;
+    font-size: 2.4vw;
+    letter-spacing: 0.8vw;
+  }
+  .panel .clock {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    right: 10%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
