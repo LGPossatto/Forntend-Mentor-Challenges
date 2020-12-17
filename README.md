@@ -18,4 +18,5 @@ Este repositório contêm alguns desafios que usei para aumentar minha habilidad
 08 - [coding-bootcamp-testimonials-slider-master](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL)  
 09 - [intro-component-with-signup-form-master](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)  
 10 - [social-media-dashboard-with-theme-switcher](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H)  
-11 - [ping-coming-soon-page-master](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da)
+11 - [ping-coming-soon-page-master](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da)  
+12 - [launch-countdown-timer-main](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)
