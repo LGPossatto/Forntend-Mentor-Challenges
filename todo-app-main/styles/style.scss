@@ -63,11 +63,12 @@ body{
 
     .input-box{
         @include inputBoxTemplate();
+        min-height: 70px;
         margin-bottom: 25px;
         border-radius: 7px;
         box-shadow: 0px 5px 10px rgba($very-dark-blue, 0.25);
 
-        .circle-unchecked{
+        .circle-unchecked-input{
             @include circle-unchecked();
         }
 
@@ -114,6 +115,7 @@ body{
 
     .footer{
         @include inputBoxTemplate();
+        min-height: 60px;
         height: 60px;
         border-radius: 0 0 7px 7px;
         margin-bottom: 25px;
@@ -187,7 +189,7 @@ body{
     .input-box{
         background-color: $white;
 
-        .circle-unchecked{
+        .circle-unchecked, .circle-unchecked-input{
             .inner-circle{
                 background-color: $white;
             }
@@ -305,6 +307,7 @@ body{
     .main-section{    
     
         .input-box{
+            min-height: 50px;
             height: 50px;
 
             .circle-unchecked{
@@ -329,15 +332,16 @@ body{
         .todo-list{
 
             .txt-box{
+                min-height: 50px;
                 height: 50px;
 
                 .circle-unchecked{
-                    width: 18px;
-                    height: 18px;
-            
+                    width: 25px;
+                    height: 25px;
+                
                     .inner-circle{
-                        width: 12px;
-                        height: 14px;
+                        width: 21px;
+                        height: 21px;
                     }
                 }
 
@@ -349,6 +353,9 @@ body{
         }
     
         .footer{    
+            min-height: 40px;
+            height: 40px;
+
             .item-left{
                 font-size: calc(#{$main-font-size} * 0.8);
             }

@@ -86,13 +86,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 70px;
   margin-bottom: 25px;
   border-radius: 7px;
   -webkit-box-shadow: 0px 5px 10px rgba(22, 23, 34, 0.25);
           box-shadow: 0px 5px 10px rgba(22, 23, 34, 0.25);
 }
 
-.main-section .input-box .circle-unchecked {
+.main-section .input-box .circle-unchecked-input {
   background-color: #777a92;
   width: 25px;
   height: 25px;
@@ -109,7 +110,7 @@ body {
           align-items: center;
 }
 
-.main-section .input-box .circle-unchecked .inner-circle {
+.main-section .input-box .circle-unchecked-input .inner-circle {
   width: 23px;
   height: 23px;
   background-color: #25273c;
@@ -125,18 +126,18 @@ body {
           align-items: center;
 }
 
-.main-section .input-box .circle-unchecked .inner-circle img {
+.main-section .input-box .circle-unchecked-input .inner-circle img {
   display: none;
 }
 
-.main-section .input-box .circle-unchecked:hover {
+.main-section .input-box .circle-unchecked-input:hover {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#57ddff), to(#c058f3));
   background-image: linear-gradient(to bottom right, #57ddff, #c058f3);
   cursor: pointer;
 }
 
 .main-section .input-box #add-item {
-  width: 80%;
+  width: 75%;
   height: 100%;
   font-size: calc(18px * 1.15);
   color: #cacde8;
@@ -230,7 +231,7 @@ body {
 }
 
 .main-section .todo-list .txt-box p {
-  width: 80%;
+  width: 75%;
   height: 100%;
   font-size: calc(18px * 1.15);
   color: #cacde8;
@@ -271,6 +272,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 60px;
   height: 60px;
   border-radius: 0 0 7px 7px;
   margin-bottom: 25px;
@@ -344,7 +346,7 @@ body {
   background-color: white;
 }
 
-.light-theme .input-box .circle-unchecked .inner-circle {
+.light-theme .input-box .circle-unchecked .inner-circle, .light-theme .input-box .circle-unchecked-input .inner-circle {
   background-color: white;
 }
 
@@ -444,6 +446,7 @@ body {
     background-image: url(../images/bg-mobile-light.jpg) !important;
   }
   .main-section .input-box {
+    min-height: 50px;
     height: 50px;
   }
   .main-section .input-box .circle-unchecked {
@@ -470,19 +473,24 @@ body {
     font-size: calc(18px * 0.8);
   }
   .main-section .todo-list .txt-box {
+    min-height: 50px;
     height: 50px;
   }
   .main-section .todo-list .txt-box .circle-unchecked {
-    width: 18px;
-    height: 18px;
+    width: 25px;
+    height: 25px;
   }
   .main-section .todo-list .txt-box .circle-unchecked .inner-circle {
-    width: 12px;
-    height: 14px;
+    width: 21px;
+    height: 21px;
   }
   .main-section .todo-list .txt-box p {
     line-height: 50px;
     font-size: calc(18px * 0.8);
+  }
+  .main-section .footer {
+    min-height: 40px;
+    height: 40px;
   }
   .main-section .footer .item-left {
     font-size: calc(18px * 0.8);
