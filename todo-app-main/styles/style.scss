@@ -1,0 +1,372 @@
+@import './variables';
+@import './layouts';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    font-family: $main-font;
+    font-size: $main-font-size;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $very-dark-blue;
+    background-image: url(../images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 50%;
+    max-width: 1440px;
+}
+
+.main-section{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header{
+        width: 100%;
+        padding: 75px 0 50px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        h1{
+            text-transform: uppercase;
+            letter-spacing: calc(#{$main-font-size} * 0.75);
+            font-size: calc(#{$main-font-size} * 2.25);
+            font-weight: 700;
+            color: $white;
+        }
+
+        .dark-img{
+            background-image: url(../images/icon-sun.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .input-box{
+        @include inputBoxTemplate();
+        margin-bottom: 25px;
+        border-radius: 7px;
+        box-shadow: 0px 5px 10px rgba($very-dark-blue, 0.25);
+
+        .circle-unchecked{
+            @include circle-unchecked();
+        }
+
+        #add-item{
+            @include txtMixin();
+
+            background-color: transparent;
+            border: none;
+
+            &::placeholder{
+                font-size: calc(#{$main-font-size} * 1.15);
+                color: $light-grayish-blue;
+            }
+        }
+    }
+
+    .todo-list{
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba($very-dark-blue, 0.25);
+
+        .txt-box{
+            @include inputBoxTemplate();
+            border-bottom: 2px solid $very-dark-grayish-blue;
+
+            .circle-unchecked{
+                @include circle-unchecked();
+            }
+
+            p{
+                @include txtMixin();
+
+                line-height: 70px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+
+            @include removeX();
+            
+            &:first-child{
+                border-radius: 7px 7px 0 0;
+            }
+        }
+    }
+
+    .footer{
+        @include inputBoxTemplate();
+        height: 60px;
+        border-radius: 0 0 7px 7px;
+        margin-bottom: 25px;
+        box-shadow: 0px 5px 10px rgba($very-dark-blue, 0.25);
+
+        justify-content: space-between;
+
+        .item-left{
+            padding-left: 25px;
+
+            font-size: calc(#{$main-font-size} * 1);
+            font-weight: 400;
+            color: $dark-grayish-blue;
+        }
+
+        .item-status{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                padding:7px;
+            
+                font-size: calc(#{$main-font-size} * 1);
+                font-weight: 400;
+                color: $dark-grayish-blue;
+
+                &:hover{
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .item-clear{
+            padding-right: 25px;
+            
+            font-size: calc(#{$main-font-size} * 1);
+            font-weight: 400;
+            color: $dark-grayish-blue;
+
+            &:hover{
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bottom-tip{
+        padding-top: 25px;
+
+        font-size: calc(#{$main-font-size} * 1);
+        color: $dark-grayish-blue;
+        font-weight: 400;
+    }
+}
+
+// light-theme ----------------------------------------------------
+
+.light-theme{    
+    background-color: $white;
+    background-image: url(../images/bg-desktop-light.jpg);
+
+    .header{
+
+        .dark-img{
+            background-image: url(../images/icon-moon.svg);
+        }
+    }
+
+    .input-box{
+        background-color: $white;
+
+        .circle-unchecked{
+            .inner-circle{
+                background-color: $white;
+            }
+        }
+
+        #add-item{
+            color: $very-dark-grayish-blue;
+
+            &::placeholder{
+                color: $dark-grayish-blue;
+            }
+        }
+    }
+
+    .todo-list{
+
+        .txt-box{
+            background-color: $white;
+            border-bottom: 2px solid $very-light-grayish-blue;
+
+            .circle-unchecked{
+                .inner-circle{
+                    background-color: $white;
+                }
+            }
+
+            p{
+                color: $very-dark-grayish-blue;
+            }
+        }
+    }
+
+    .footer{
+        background-color: $white;
+
+        .item-status{
+
+            p{
+
+                &:hover{
+                    color: $very-dark-grayish-blue;
+                }
+            }
+        }
+
+        .item-clear{
+
+            &:hover{
+                color: $very-dark-grayish-blue;
+            }
+        }
+    }
+
+    .bottom-tip{
+        color: $dark-grayish-blue;
+    }
+}
+
+// active status --------------------------------------------------
+
+.box-checked{
+    
+    .circle-unchecked{
+        background-image: $check-background;
+
+        .inner-circle{
+            background-image: $check-background;
+    
+            img{
+                display: block !important;
+            }
+        }
+    }
+
+    p{
+        text-decoration: line-through;
+        color: $very-dark-grayish-blue !important;
+    }
+}
+
+.light-txt{
+
+    p{
+        color: $light-grayish-blue !important;
+    }
+}
+
+.item-status-actvated{
+    color: $bright-blue !important;
+}
+
+// media --------------------------------------------
+
+@media screen and (max-width: 1100px){
+    .wrapper{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .wrapper{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        width: 95%;
+    }
+
+    body{
+        background-image: url(../images/bg-mobile-light.jpg) !important;
+    }
+
+    .main-section{    
+    
+        .input-box{
+            height: 50px;
+
+            .circle-unchecked{
+                width: 25px;
+                height: 25px;
+            
+                .inner-circle{
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+    
+            #add-item{
+                font-size: calc(#{$main-font-size} * 0.8);
+    
+                &::placeholder{
+                    font-size: calc(#{$main-font-size} * 0.8);
+                }
+            }
+        }
+    
+        .todo-list{
+
+            .txt-box{
+                height: 50px;
+
+                .circle-unchecked{
+                    width: 18px;
+                    height: 18px;
+            
+                    .inner-circle{
+                        width: 12px;
+                        height: 14px;
+                    }
+                }
+
+                p{
+                    line-height: 50px;
+                    font-size: calc(#{$main-font-size} * 0.8);
+                }
+            }
+        }
+    
+        .footer{    
+            .item-left{
+                font-size: calc(#{$main-font-size} * 0.8);
+            }
+    
+            .item-status{
+
+                p{
+                    font-size: calc(#{$main-font-size} * 0.8);
+                }
+            }
+    
+            .item-clear{
+                font-size: calc(#{$main-font-size} * 0.8);
+            }
+        }
+    
+        .bottom-tip{
+            font-size: calc(#{$main-font-size} * 0.8);
+        }
+    }
+}

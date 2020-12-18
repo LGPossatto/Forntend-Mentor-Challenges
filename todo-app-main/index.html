@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+<body class="light-theme">
+  <div class="main-section wrapper">
+    <div class="header">
+      <h1>Todo</h1>
+      <div class="dark-img"></div>
+    </div>
+    <div class="input-box">
+      <div class="circle-unchecked">
+        <div class="inner-circle"><img src="./images/icon-check.svg" alt="icon-check"></div>
+      </div>
+      <input type="text" id="add-item" placeholder="Create a new todo...">
+    </div>
+
+    <div class="todo-list">
+      <div class="txt-box box-checked light-txt">
+        <div class="circle-unchecked">
+          <div class="inner-circle"><img src="./images/icon-check.svg" alt="icon-check"></div>
+        </div>
+        <p>Test1</p>
+        <div class="x-remove">
+          <img src="./images/icon-cross.svg" alt="icon-cross">
+        </div>
+      </div>
+      <div class="txt-box">
+        <div class="circle-unchecked">
+          <div class="inner-circle"><img src="./images/icon-check.svg" alt="icon-check"></div>
+        </div>
+        <p>Test2</p>
+        <div class="x-remove">
+          <img src="./images/icon-cross.svg" alt="icon-cross">
+        </div>
+      </div>
+      <div class="txt-box">
+        <div class="circle-unchecked">
+          <div class="inner-circle"><img src="./images/icon-check.svg" alt="icon-check"></div>
+        </div>
+        <p>Test3</p>
+        <div class="x-remove">
+          <img src="./images/icon-cross.svg" alt="icon-cross">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <p class="item-left">5 items left</p>
+      <div class="item-status">
+        <p class="all item-status-actvated">All</p>
+        <p class="active">Active </p>
+        <p class="completed">Completed</p>
+      </div>
+        <p class="item-clear">Clear Completed</p>
+    </div>
+
+    <p class="bottom-tip">Drag and drop to reorder list </p>
+
+
+  </div>
+</body>
+</html>

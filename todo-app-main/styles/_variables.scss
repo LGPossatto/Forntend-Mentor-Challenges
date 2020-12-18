@@ -1,0 +1,26 @@
+// typography
+$main-font: 'Josefin Sans', sans-serif; // 400, 700
+$main-font-size: 18px;
+
+// colors
+
+// primary
+$bright-blue: rgb(58, 123, 253);
+$check-background: linear-gradient(to bottom right, rgb(87, 221, 255), rgb(192, 88, 243));
+
+// light theme
+$very-light-gray: hsl(0, 0%, 98%);
+$very-light-grayish-blue: rgb(228, 229, 241);
+// $light-grayish-blue: hsl(233, 11%, 84%);
+// $dark-grayish-blue: hsl(236, 9%, 61%);
+// $very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+// dark theme
+$very-dark-blue: rgb(22, 23, 34);
+$very-dark-desaturated-blue: rgb(37, 39, 60);
+
+$light-grayish-blue: rgb(202, 205, 232);
+$dark-grayish-blue: rgb(119, 122, 146);
+$very-dark-grayish-blue: rgb(57, 58, 76);
+
+$white: rgb(255, 255, 255);
