@@ -1,0 +1,24 @@
+@mixin coinLayout() {
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    border: 25px solid;
+}
+
+@mixin bigCoinLayout() {
+    background-color: $white;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 225px;
+    height: 225px;
+
+    border-radius: 50%;
+    border: 35px solid;
+}
