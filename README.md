@@ -21,3 +21,4 @@ Este repositório contêm alguns desafios que usei para aumentar minha habilidad
 11 - [ping-coming-soon-page-master](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da)  
 12 - [launch-countdown-timer-main](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-)  
 13 - [todo-app-main](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW)  
+14 - [rock-paper-scissors-master](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH)  
