@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+}
+
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #eef6f6;
+  font-size: 15px;
+}
+
+.bg-top {
+  background-color: #5ba4a4;
+  background-image: url(../images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+}
+/*# sourceMappingURL=style.css.map */

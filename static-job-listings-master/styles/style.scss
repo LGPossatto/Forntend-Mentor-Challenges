@@ -1,0 +1,33 @@
+@import './variables';
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: $main-font;
+    font-weight: 500;
+}
+
+html,body{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+body{    
+    background-color: $light-grayish-cyan;
+    font-size: $main-font-size;
+}
+
+.bg-top{
+    background-color: $desaturated-dark-cyan;
+    background-image: url(../images/bg-header-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 20%;
+}
