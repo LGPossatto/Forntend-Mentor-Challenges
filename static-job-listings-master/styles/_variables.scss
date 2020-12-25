@@ -1,13 +1,13 @@
 // colors
 
 // primary
-$desaturated-dark-cyan: hsl(180, 29%, 50%);
+$desaturated-dark-cyan: rgb(91, 164, 164);
 
 // neutral
-$light-grayish-cyan: hsl(180, 52%, 96%); // (background)
-$light-grayish-cyan: hsl(180, 31%, 95%); // (filter tablets)
-$dark-grayish-cyan: hsl(180, 8%, 52%);
-$very-dark-grayish-cyan: hsl(180, 14%, 20%);
+$light-grayish-cyan: rgb(239, 250, 250); // (background)
+$light-grayish-cyan: rgb(238, 246, 246); // (filter tablets)
+$dark-grayish-cyan: rgb(123, 142, 142);
+$very-dark-grayish-cyan: rgb(44, 58, 58);
 
 // typography
 $main-font: 'Spartan', sans-serif; // 500, 700
