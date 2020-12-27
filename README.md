@@ -2,10 +2,10 @@
 Challenges from https://www.frontendmentor.io/challenges
 
 ##### English --->
-This repository contains some challenges that I used to improve my ability in HTML, CSS, JavaScript, Sass and other technologies.
+This repository contains some challenges that I used to improve my ability in HTML, CSS, JavaScript, Sass and other technologies. My objective is not to do 100% of the challenges, but to utilize them to experiment and learn.
 
 ##### Português --->
-Este repositório contêm alguns desafios que usei para aumentar minha habilidade em HTML, CSS, JavaScript, Sass e outras tecnologias.
+Este repositório contém alguns desafios que usei para aumentar minha habilidade em HTML, CSS, JavaScript, Sass e outras tecnologias. Meu objetivo não é completar 100% dos desafios, mas usá-los para experimentar e aprender.
 
 ### Timeline
 01 - [profile-card-component-main](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ) (first challenge made)  
