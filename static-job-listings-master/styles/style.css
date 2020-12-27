@@ -13,7 +13,7 @@ html, body {
 body {
   background-color: #eef6f6;
   font-size: 15px;
-  margin-top: 15%;
+  margin-top: 9.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +45,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 1.75rem;
+  padding: 1.75rem 1.75rem 1.25rem;
   margin-bottom: 2rem;
   border-radius: 5px;
   -webkit-box-shadow: 0 10px 10px -5px rgba(44, 58, 58, 0.1);
@@ -56,6 +56,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  visibility: hidden;
 }
 
 .selected-tags .tag-list {
@@ -231,6 +232,7 @@ body {
 }
 
 .card .tags {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

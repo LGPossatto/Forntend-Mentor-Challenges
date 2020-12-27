@@ -1,17 +1,21 @@
 let _body = document.querySelector('body');
 let _tagList = document.querySelector('.tag-list');
+let _selectedTags = document.querySelector('.selected-tags');
+let _clearTags = document.querySelector('.clear-tags');
 let _selectedList = [];
 
 const selectTag = (tagName) => {
     _selectedList.push(tagName);
     createNewTag(tagName);
     showSelected();
+    showTags();
 }
 
 const deleteTag = (tagName, newTag) => {
     _selectedList.splice(_selectedList.indexOf(tagName), 1);
     newTag.remove();
     showSelected();
+    showTags();
 }
 
 const showSelected = () => {
@@ -34,6 +38,14 @@ const showSelected = () => {
         } else {
             itemCard.style.display = 'none';
         }
+    }
+}
+
+const showTags = () => {
+    if (_selectedList.length === 0){
+        _selectedTags.style.visibility = 'hidden';
+    } else {
+        _selectedTags.style.visibility = 'visible';
     }
 }
 
@@ -60,6 +72,12 @@ const createNewTag = (tagName) => {
         
     _tagList.appendChild(newTag);
 }
+
+_clearTags.addEventListener('click', () => {
+    _selectedList = [];
+    showTags();
+    showSelected();
+})
 //--------------------------------------------------------------------
 //--------------------------------------------------------------------
 const createNewCard = (companyName, logoUrl, newTag, featuredTag, positionName, postedAtTxt, contractTxt, locationTxt, tagList) => {
